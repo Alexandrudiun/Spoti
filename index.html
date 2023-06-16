@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #0d0c0d;
+            font-family: Arial, sans-serif;
+        }
+        
+        .LoginBox {
+            width: 90%;
+            max-width: 400px;
+            background: #0d0c0d;
+            color: #15f4f5;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .LoginBox h1 {
+            margin: 0 0 20px;
+            color: #15f4f5;
+            font-size: 24px;
+        }
+        
+        .LoginBox p {
+            margin: 0;
+            color: #a49da1;
+            font-size: 14px;
+        }
+        
+        .LoginBox input[type="text"],
+        .LoginBox input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #a49da1;
+            border-radius: 4px;
+            font-size: 16px;
+            background: #0d0c0d;
+            color: #15f4f5;
+        }
+        
+        .LoginBox input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #000000;
+            color: #15f4f5;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s, transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        }
+        
+        .LoginBox input[type="submit"]:hover {
+            background: #000000;
+            color: #fff;
+        }
+        
+        .LoginBox input[type="submit"]:active {
+            animation: buttonClick 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        }
+        
+        @keyframes buttonClick {
+            0% {
+                transform: translateY(0);
+            }
+            10% {
+                transform: translateY(-5px);
+            }
+            20% {
+                transform: translateY(0);
+            }
+            30% {
+                transform: translateY(-3px);
+            }
+            40% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-1px);
+            }
+            60% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="LoginBox">
+        <h1>Login</h1>
+        <form action="#" method="post">
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
