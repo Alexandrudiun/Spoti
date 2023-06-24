@@ -1,0 +1,92 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #000000;
+            font-family: Arial, sans-serif;
+        }
+        
+        .LoginBox {
+            width: 100%;
+            max-width: 250px;
+            background: #0d0c0d;
+            color: #15f4f5;
+            padding: 30px;
+            padding-right: 49px;
+            border-radius: 27px;
+            animation: glowing-border 2s ease-in-out infinite;
+        }
+        
+        .LoginBox h1 {
+            text-align: center;
+            margin: 0 0 20px;
+            color: #ffffff;
+            font-size: 45px;
+            margin-left: 15px;
+        }
+        
+        .LoginBox p {
+            margin: 0;
+            color: #a49da1;
+            font-size: 24px;
+        }
+        
+        .LoginBox input[type="email"],
+        .LoginBox input[type="password"],
+        .LoginBox input[type="tel"] {
+            width: calc(100% - 30px);
+            padding: 20px;
+            margin-left: 4px;
+            margin-bottom: 20px;
+            border: 1px solid #a49da1;
+            border-radius: 27px;
+            font-size: 16px;
+            background: #0d0c0d;
+            color: #15f4f5;
+        }
+        
+        .buton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            width: calc(100% - 50px);
+            padding: 25px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            background: #000000;
+            color: #bbffff;
+            border: 1px solid #15f4f5;
+            border-radius: 42px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s, transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        }
+        
+        .ionicon {
+            align-items: flex-end; 
+            margin-left: 10px;
+            width: 50pt;
+            height: 70pt;
+        }
+        
+        h2 {
+            font-size: 33px;
+        }
+        
+        @keyframes glowing-border {
+            0% {
+                box-shadow: 0 0 5px #15f4f5;
+            }
+            50% {
+                box-shadow: 0 0 20px #15f4f5;
+            }
+            100% {
+                box-shadow: 0 0 5px #15f4f5;
+            }
+        }
+
