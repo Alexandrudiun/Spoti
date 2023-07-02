@@ -10,7 +10,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
             background: #000000;
             font-family: Arial, sans-serif;
         }
@@ -44,8 +44,9 @@
         .LoginBox input[type="password"],
         .LoginBox input[type="tel"],
         .LoginBox input[type="text"] {
-            width: 100%;
+            width: calc(100% - 30px);
             padding: 20px;
+            margin-left: 4px;
             margin-bottom: 20px;
             border: 1px solid #a49da1;
             border-radius: 27px;
@@ -53,7 +54,6 @@
             background: #0d0c0d;
             color: #15f4f5;
         }
-        
         .buton {
             display: flex;
             justify-content: center;
@@ -96,11 +96,11 @@
         }
         
         /* Media Query for Mobile Devices */
-        @media (max-width: 480px) {
+        /* @media (max-width: 480px) {
             .LoginBox {
                 max-width: 100%;
             }
-        }
+        } */
     </style>
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="/assets/img/1.jpg">
