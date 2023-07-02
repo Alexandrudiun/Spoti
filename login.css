@@ -91,9 +91,3 @@
             }
         }
 
-/* Media Query for Mobile Devices */
-@media (max-width: 480px) {
-    .LoginBox {
-        max-width: 70%;
-    }
-} 
