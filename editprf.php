@@ -15,6 +15,10 @@ if(isset($_SESSION['password'])&&isset($_SESSION['email'])){
 <head>
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="/login.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="/assets/img/1.jpg">
+    <link rel="shortcut icon" href="assets/img/1.jpg" type="image/x-icon">
+    
 </head>
 <body>
     <div class="LoginBox">
