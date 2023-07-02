@@ -1,23 +1,23 @@
 {
-    "name": "Acces",
-    "short_name": "ACS",
-    "description": "acces",
+    "name": "Jobs For Students",
+    "short_name": "JFS",
+    "description": "Creeam locuri de muncă",
     "icons": [
       {
-        "src": "assets/img/1.jpg",
+        "src": "img/logo192.png",
         "sizes": "192x192",
-        "type": "image/jpg",
+        "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src":"assets/img/2.jpg",
+        "src":"img/logo384.png",
         "sizes":"384x384",
-        "type":"image/jpg"
+        "type":"image/png"
       },
       {
-        "src":"assets/img/3.jpg",
+        "src":"img/logo512.png",
         "sizes":"512x512",
-        "type":"image/jpg"
+        "type":"image/png"
       }
     ],
     "start_url": "/",
