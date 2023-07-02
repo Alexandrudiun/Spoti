@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terms and Confidentiality</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            background: #000000;
+            font-family: Arial, sans-serif;
+        }
+        
+        .Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        
+        .PageContent {
+            width: 600px;
+            background: #0d0c0d;
+            color: #15f4f5;
+            padding: 30px;
+            border-radius: 27px;
+            animation: glowing-border 2s ease-in-out infinite;
+            text-align: left;
+        }
+        
+        .PageContent h1 {
+            margin: 0 0 20px;
+            color: #ffffff;
+            font-size: 28px;
+        }
+        
+        .PageContent p {
+            margin: 0;
+            color: #a49da1;
+            font-size: 18px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .PageContent ul {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+        
+        .PageContent li {
+            margin-bottom: 10px;
+        }
+        
+        .GoBackButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            padding: 10px;
+            background: #000000;
+            color: #bbffff;
+            border: 1px solid #15f4f5;
+            border-radius: 42px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s, transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+            margin-top: 20px;
+        }
+        
+        @keyframes glowing-border {
+            0% {
+                box-shadow: 0 0 5px #15f4f5;
+            }
+            50% {
+                box-shadow: 0 0 20px #15f4f5;
+            }
+            100% {
+                box-shadow: 0 0 5px #15f4f5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="PageContent">
+            <div style="text-align: left; color: white;">
+                <h1>PRIVACY POLICY (EN)</h1>
+                <p>This privacy policy explains how we collect, use, and share information when you use our website, www.revista-lto.me. By using our website, you accept the practices described in this privacy policy.</p>
+                <h2>INFORMATION WE COLLECT</h2>
+                <p>We may collect the following information about you when you use our website:</p>
+                <ul>
+                    <li>Personal information such as your name, email address, and phone number when you contact us.</li>
+                    <li>Technical information such as your IP address, browser type, and device type when you access our website.</li>
+                    <li>Usage information such as the pages you visit and the actions you take on our website.</li>
+                </ul>
+                <h2>HOW WE USE YOUR INFORMATION</h2>
+                <p>We may use the information we collect for the following purposes:</p>
+                <ul>
+                    <li>To provide and improve our services, including personalizing content and ads.</li>
+                    <li>To communicate with you about your account or our services.</li>
+                    <li>To comply with legal obligations, such as responding to requests from law enforcement or government agencies.</li>
+                </ul>
+                <h2>SHARING YOUR INFORMATION</h2>
+                <p>We may share your information with third parties for the following purposes:</p>
+                <ul>
+                    <li>To provide and improve our services, such as using a payment processor to process transactions.</li>
+                    <li>To comply with legal obligations, such as responding to requests from law enforcement or government agencies.</li>
+                </ul>
+                <p>We will not sell or rent your personal information to third parties for their own marketing purposes without your explicit consent.</p>
+                <h2>YOUR RIGHTS</h2>
+                <p>You have the following rights with respect to your personal information:</p>
+                <ul>
+                    <li>The right to access, modify, or delete your personal information.</li>
+                    <li>The right to opt-out of marketing communications.</li>
+                    <li>The right to file a complaint with the Romanian Data Protection Authority if you believe your rights have been violated.</li>
+                </ul>
+                <h2>SECURITY</h2>
+                <p>We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, no website can fully eliminate security risks.</p>
+                <h2>CHANGES TO THIS PRIVACY POLICY</h2>
+                <p>We may update this privacy policy from time to time. We will notify you of any material changes by posting the updated policy on our website. We encourage you to review this privacy policy periodically to stay informed about how we are protecting your information.</p>
+                <h2>CONTACT US</h2>
+                <p>If you have any questions or concerns about our privacy policy or practices, please contact us.</p>
+            </div>
+            <button class="GoBackButton" onclick="goBack()">Go Back</button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

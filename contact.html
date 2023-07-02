@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Contact Page</title>
+    <style>
+        .LoginBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+        .GoBackButton {
+            width: 150px;
+            padding: 10px;
+            background: #000000;
+            color: #bbffff;
+            border: 1px solid #15f4f5;
+            border-radius: 42px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s, transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+            margin-top: 20px;
+        }
+        
+        .CenteredText {
+            color: azure;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .CenteredText1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="LoginBox">
+        <h2 class="CenteredText1">Contact</h2>
+        <h3 class="CenteredText">alexandrudinu04@gmail.com</h3>
+        <h3 class="CenteredText">0759154425
+        </h3>
+        <button class="GoBackButton" onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

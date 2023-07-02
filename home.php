@@ -33,7 +33,7 @@ session_start();
     .edit{
         text-decoration: none;  
         color:darkcyan;
-        align-items: ;
+        align-items: center;
     }
 </style>
 <body>
@@ -60,9 +60,9 @@ session_start();
             </div>
             <div style="display: flex; justify-content: space-between; align-items:center; gap:10px; ">
 
-            <a class="edit" href="index.php"> <h2 style="font-size: 20px; border-radius:12px; text-align: center; border: 2px solid black; padding:5px;">  Contact  </h2></a>
-            <a class="edit" href="index.php"> <h2 style="font-size: 20px; border-radius:12px; text-align: center; border: 2px solid black; padding:5px;">Edit profile  </h2></a>
-            <a class="edit" href="index.php"> <h2 style="font-size: 20px; border-radius:12px; text-align: center; border: 2px solid black; padding:5px;">Terms</h2></a>
+            <a class="edit" href="contact.html"> <h2 style="font-size: 20px; border-radius:12px; text-align: center; border: 2px solid black; padding:5px;">  Contact  </h2></a>
+            <a class="edit" href="editprf.php"> <h2 style="font-size: 20px; border-radius:12px; text-align: center; border: 2px solid black; padding:5px;">Edit profile  </h2></a>
+            <a class="edit" href="terms.html"> <h2 style="font-size: 20px; border-radius:12px; text-align: center; border: 2px solid black; padding:5px;">Terms</h2></a>
             </div>
     </div>
 </body>
