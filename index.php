@@ -49,6 +49,10 @@ if(isset($_POST['submit'])){
                     <h2>login</h2>
                     <svg class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/></svg>
                 </button>
+                <button type="submit" class="buton" name="submit">
+                    <h2>register</h2>
+                    <svg class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/></svg>
+                </button>
             </div>
         </form>
     </div>
