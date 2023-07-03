@@ -1,17 +1,31 @@
-<?php
-include 'conn.php';
-session_start();
-if(isset($_SESSION['password'])&&isset($_SESSION['email'])){
-    if(isset($_POST['submit']))
-        {
-            $name = $_POST['name'];
-            //$photo = $_FILES['photo']['name'];
-            $query = mysqli_query($conn,"update users set name='$name' where email='$_SESSION[email]'");
-            header("location:home.php");    
-                }
-            
-}else{ 
-    header("location:index.php");
+<?php  
+include "conn.php";
+session_start(); // Start the session
+if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
+    $query="SELECT * FROM users WHERE email = '{$_SESSION['email']}'";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);
+    
+    if(!$result)
+    {
+      die('Query Failed'). mysqli_error($conn);
+    }
+    $email = $_SESSION['email'];
+    $password = $_SESSION['password'];
+    if(isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $query = "UPDATE users SET name = '$name' WHERE email = '$email'";
+        $update_user_query = mysqli_query($conn, $query);
+
+        if(!$update_user_query) {
+            die("Query Failed" . mysqli_error($conn));
+        }
+
+        header("Location: home.php");
+    }
+}
+else {
+    header("Location: index.php");
 }
 ?>
 <!DOCTYPE html>
