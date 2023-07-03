@@ -8,7 +8,11 @@ if(isset($_SESSION['password'])&&isset($_SESSION['email'])){
             //$photo = $_FILES['photo']['name'];
             $query = mysqli_query($conn,"update users set name='$name' where email='$_SESSION[email]'");
             header("location:home.php");    
-                }}
+                }
+            
+}else{ 
+    header("location:index.php");
+}
 ?>
 <!DOCTYPE html>
 <html>
