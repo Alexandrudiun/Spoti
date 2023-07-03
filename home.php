@@ -1,6 +1,7 @@
 <?php
 include 'conn.php';
 session_start();
+if(!isset($_SESSION['email']) && !isset($_SESSION['password'])) {
     $email = $_SESSION['email'];    
     $email_search = "select * from users where email='$email'";
     $query = mysqli_query($conn,$email_search);
@@ -14,7 +15,10 @@ session_start();
     // echo $name;
     // echo $phone;
     // echo $availability;
-
+}
+else {
+    header("Location: index.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
