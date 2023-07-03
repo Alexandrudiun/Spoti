@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
             </div>
             <div style="display: flex; justify-content: center; flex-direction: column;">
                 <p style="font-size:12px; margin-top:15px; text-align: center;">You don't have an account? </p>
-                <p style="font-size:12px; margin-top:15px; text-align: center;"> <a href="register.php">Create an account now</a></p>
+                <p style="font-size:12px; margin-top:15px; text-align: center; text-decoration: #15f4f5;"> <a href="register.php">Create an account now</a></p>
         </form>
     </div>
 </body>
