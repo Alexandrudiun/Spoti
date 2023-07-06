@@ -4,6 +4,7 @@ session_start();
 
  
     $email = $_SESSION['email'];    
+    if(isset($email)){
     $email_search = "select * from users where email='$email'";
     $query = mysqli_query($conn,$email_search);
     $usr = mysqli_fetch_assoc($query);
@@ -17,7 +18,9 @@ session_start();
     // echo $phone;
     // echo $availability;
 
-
+} else {
+    header("Location: index.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
