@@ -17,9 +17,7 @@ if(!isset($_SESSION['email'])) {
     // echo $phone;
     // echo $availability;
 }
-else {
-    header("Location: index.php");
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
