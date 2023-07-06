@@ -9,8 +9,9 @@ session_start();
     $id = $usr['id'];
     $name = $usr['name'];
     $phone = $usr['phone'];
-    $availability = $usr['availability'];
-
+    //$availability = $usr['availability'];
+    $date =$usr['date'];
+    $availability=$usr['$availability']+($date-date("Y-m-d"));
     // echo $id;
     // echo $name;
     // echo $phone;
