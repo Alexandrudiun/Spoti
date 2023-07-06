@@ -21,6 +21,7 @@ session_start();
     echo date("Y-m-d");
     echo "<br>";
     echo $availability;
+    echo date("Y-m-d")-$date;
 } else {
     header("Location: index.php");
 }
