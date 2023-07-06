@@ -9,9 +9,11 @@ session_start();
     $id = $usr['id'];
     $name = $usr['name'];
     $phone = $usr['phone'];
-    //$availability = $usr['availability'];
+    $availability = $usr['availability'];
     $date =$usr['date'];
-    $availability=$usr['$availability']+($date-date("Y-m-d"));
+    $presentDate = date('Y-m-d'); // Get the present date
+    $daysBetween = floor((strtotime($presentDate) - strtotime($date)) / (60 * 60 * 24));
+    $availability = $availability - $daysBetween;
     // echo $id;
     // echo $name;
     // echo $phone;
