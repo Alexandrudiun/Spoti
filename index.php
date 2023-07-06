@@ -14,11 +14,8 @@ if(isset($_POST['submit'])){
         $pass_decode = password_verify($password, $db_pass);
         if($pass_decode){
             echo "login successful";
-            ?>
-            <script>
-                location.replace("home.php");
-            </script>
-            <?php
+            header('location:home.php');
+            
         }else{
             echo "password incorrect";
         }
