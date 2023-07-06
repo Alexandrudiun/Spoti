@@ -1,6 +1,7 @@
 <?php
 include 'conn.php';
 session_start();
+echo $_SESSION['email'];
 if(!isset($_SESSION['email']) && !isset($_SESSION['password'])) {
     $email = $_SESSION['email'];    
     $email_search = "select * from users where email='$email'";
