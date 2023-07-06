@@ -17,7 +17,9 @@ session_start();
     // echo $phone;
     // echo $availability;
     echo $date;
+    echo "<br>";
     echo date("Y-m-d");
+    echo "<br>";
     echo $availability;
 } else {
     header("Location: index.php");
