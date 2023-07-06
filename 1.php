@@ -20,8 +20,13 @@ session_start();
     echo "<br>";
     echo date("Y-m-d");
     echo "<br>";
-    echo $availability;
-    echo date("Y-m-d")+$date;
+  
+$presentDate = date('Y-m-d'); // Get the present date
+
+$daysBetween = floor((strtotime($presentDate) - strtotime($date)) / (60 * 60 * 24));
+
+echo "Number of days between $date and present date is: $daysBetween";
+
 } else {
     header("Location: index.php");
 }
