@@ -3,8 +3,9 @@ include 'conn.php';
 session_start();
 
  
-    $email = $_SESSION['email'];    
-    if(isset($email)){
+   
+    if(isset($_SESSION['email'])){
+        $email = $_SESSION['email']; 
     $email_search = "select * from users where email='$email'";
     $query = mysqli_query($conn,$email_search);
     $usr = mysqli_fetch_assoc($query);
