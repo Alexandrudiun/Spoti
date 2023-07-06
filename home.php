@@ -1,8 +1,8 @@
 <?php
 include 'conn.php';
 session_start();
-echo $_SESSION['email'];
-if(!isset($_SESSION['email']) && !isset($_SESSION['password'])) {
+
+if(!isset($_SESSION['email'])) {
     $email = $_SESSION['email'];    
     $email_search = "select * from users where email='$email'";
     $query = mysqli_query($conn,$email_search);
