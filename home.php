@@ -2,7 +2,7 @@
 include 'conn.php';
 session_start();
 
-if(!isset($_SESSION['email'])) {
+ 
     $email = $_SESSION['email'];    
     $email_search = "select * from users where email='$email'";
     $query = mysqli_query($conn,$email_search);
@@ -16,7 +16,7 @@ if(!isset($_SESSION['email'])) {
     // echo $name;
     // echo $phone;
     // echo $availability;
-}
+
 
 ?>
 <!DOCTYPE html>
