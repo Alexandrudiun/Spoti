@@ -11,6 +11,7 @@ if(isset($_POST['submit'])){
         $email_pass = mysqli_fetch_assoc($query);
         $db_pass = $email_pass['password'];
         $_SESSION['email'] = $email_pass['email'];
+        $_SESSION['password'] = $email_pass['password'];
         $pass_decode = password_verify($password, $db_pass);
         if($pass_decode){
             echo "login successful";
