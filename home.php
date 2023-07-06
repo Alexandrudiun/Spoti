@@ -11,13 +11,12 @@ session_start();
     $phone = $usr['phone'];
     $availability = $usr['availability'];
     $date =$usr['date'];
+
     $presentDate = date('Y-m-d'); // Get the present date
     $daysBetween = floor((strtotime($presentDate) - strtotime($date)) / (60 * 60 * 24));
     $availability = $availability - $daysBetween;
-    // echo $id;
-    // echo $name;
-    // echo $phone;
-    // echo $availability;
+    $query = "UPDATE users SET availability = '$availability' WHERE email = '$email'";
+    $update_user_query = mysqli_query($conn, $query);
 
 } else {
     header("Location: index.php");
