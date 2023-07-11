@@ -36,7 +36,6 @@ else {
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="/assets/img/1.jpg">
     <link rel="shortcut icon" href="assets/img/1.jpg" type="image/x-icon">
-    
     <script>
         function displaySelectedPhoto(input) {
             var selectedPhoto = document.getElementById('selected-photo');
@@ -45,11 +44,12 @@ else {
 
                 reader.onload = function(e) {
                     selectedPhoto.src = e.target.result;
+                    selectedPhoto.style.display = "block"; // Show the image
                 };
 
                 reader.readAsDataURL(input.files[0]);
             } else {
-                selectedPhoto.src = "assets/img/1.jpg"; // Display "No photo" image
+                selectedPhoto.style.display = "none"; // Hide the image
             }
         }
     </script>
