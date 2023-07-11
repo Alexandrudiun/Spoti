@@ -8,7 +8,15 @@ if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
         $name = $_POST['name'];
         $query = "UPDATE users SET name = '$name' WHERE email = '$email'";
         $update_user_query = mysqli_query($conn, $query);
+        $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+        $image_name = addslashes($_FILES['image']['name']);
+        $image_size = getimagesize($_FILES['image']['tmp_name']);
+        // if($image_size == false) {
+        //     die("Invalid image.");
+        // }
 
+        $query = "UPDATE users SET photo = '$image' WHERE email = '$email'";
+        $update_user_query = mysqli_query($conn, $query);
         if(!$update_user_query) {
             die("Query Failed" . mysqli_error($conn));
         }
@@ -33,10 +41,14 @@ else {
 <body>
     <div class="LoginBox">
         <h1>Login</h1>
-        <form method="POST" action="">
+        <form method="POST" action="" enctype="multipart/form-data">
             <p>Name:</p>
             <input type="text" name="name" required>
+            <ion-icon name="camera-outline" class="camera-icon"></ion-icon>
+          <input type="file" accept="image/*" name="image" id="image">
+          <label class="change-profile">Schimbă poza de profil</label>
             <input type="submit" name="submit" value="Update" class="buton">
+
         </form>
     </div>
 </body>
