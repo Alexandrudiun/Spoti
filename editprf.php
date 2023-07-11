@@ -39,7 +39,7 @@ else {
     
 </head>
 <body>
-    <style>
+<style>
         .LoginBox input[type="file"] {
             display: none;
         }
@@ -49,9 +49,8 @@ else {
         <form method="POST" action="" enctype="multipart/form-data">
             <p>Name:</p>
             <input type="text" name="name" value="<?php echo $_SESSION['name'];?>">
-            
-            <label class="change-profile">Schimbă poza de profil</label>
-            <input type="file" accept="image/*" name="image" id="image">
+            <label class="change-profile">Schimbă poza de profil
+          <input type="file" accept="image/*" name="image" id="image"></label>
           
             <input type="submit" name="submit" value="Update" class="buton">
 
