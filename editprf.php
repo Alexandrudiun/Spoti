@@ -39,6 +39,11 @@ else {
     
 </head>
 <body>
+    <style>
+        .LoginBox input[type="file"] {
+            display: none;
+        }
+    </style>
     <div class="LoginBox">
         <h1>Login</h1>
         <form method="POST" action="" enctype="multipart/form-data">

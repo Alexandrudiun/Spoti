@@ -38,8 +38,7 @@
         .LoginBox input[type="email"],
         .LoginBox input[type="password"],
         .LoginBox input[type="tel"],
-        .LoginBox input[type="text"],
-        .LoginBox input[type="file"] {
+        .LoginBox input[type="text"] {
             width: calc(100% - 30px);
             padding: 20px;
             margin-left: 4px;
