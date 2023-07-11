@@ -48,7 +48,7 @@ else {
             <p>Name:</p>
             <input type="text" name="name" value="<?php echo $_SESSION['name'];?>">
 
-        <button type="submit" class="buton" value="Click here to change your profile photo">
+        <button  class="buton" value="Click here to change your profile photo">
         <p>1</p>            
         <input type="file" accept="image/*" name="image" id="image">
         </button>
