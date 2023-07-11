@@ -75,7 +75,7 @@ else {
             </label>
         </form>
         <div style="display: flex; justify-content:center;">
-            <img id="selected-photo" src="" alt="Selected Photo" style="width: 120px; height: 120px; border-radius: 12px; margin-left: 35px;">
+            <img id="selected-photo" src="" alt="No photo selected" style="width: 120px; height: 120px; border-radius: 12px; margin-left: 35px;">
         </div>
     </div>
 </body>
