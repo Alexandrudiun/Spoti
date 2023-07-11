@@ -72,7 +72,7 @@ else {
             </label>
         </form>
         <div>
-            <img id="selected-photo" src="" alt="Selected Photo">
+            <img id="selected-photo" src="" alt="Selected Photo" class="prf">
         </div>
     </div>
 </body>
