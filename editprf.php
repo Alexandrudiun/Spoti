@@ -47,11 +47,11 @@ else {
         <form method="POST" action="" enctype="multipart/form-data">
             <p>Name:</p>
             <input type="text" name="name" value="<?php echo $_SESSION['name'];?>">
-            
-            <label class="button">Click here to change your profile photo
-          <input type="file" accept="image/*" name="image" id="image">
-        </label>
-          
+
+        <button type="submit" class="buton" name="submit">
+                    <h2>Click here to change your profile photo</h2>
+                    <input type="file" accept="image/*" name="image" id="image">
+        </button>
             <input type="submit" name="submit" value="Update" class="buton">
 
         </form>
