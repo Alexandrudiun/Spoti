@@ -50,7 +50,7 @@ session_start();
     <div class="LoginBox">
         <div class="NameAndProfilePhotoBox">
             <div style="width: 120px; position: relative; justify-content: center; height: 120px;">
-            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80" class="prf" alt="Profile Picture">
+            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80" style="width: 120px; height: 120px; border-radius: 12px;" alt="Profile Picture">
         </div>
         <h1 style="text-align: left; margin-top: 10px;">Hello<?php if($name)echo", " . $name;?>!</h1>
         </div>
