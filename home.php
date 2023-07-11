@@ -8,6 +8,7 @@ session_start();
     $usr = mysqli_fetch_assoc($query);
     $id = $usr['id'];
     $name = $usr['name'];
+    $_SESSION['name'] = $name;
     $phone = $usr['phone'];
     $availability = $usr['availability'];
     $date =$usr['date'];

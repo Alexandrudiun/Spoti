@@ -43,7 +43,7 @@ else {
         <h1>Login</h1>
         <form method="POST" action="" enctype="multipart/form-data">
             <p>Name:</p>
-            <input type="text" name="name" required>
+            <input type="text" name="name" value="<?php echo $_SESSION['name'];?>">
             <ion-icon name="camera-outline" class="camera-icon"></ion-icon>
           <input type="file" accept="image/*" name="image" id="image">
           <label class="change-profile">Schimbă poza de profil</label>
