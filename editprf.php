@@ -49,7 +49,7 @@ else {
 
                 reader.readAsDataURL(input.files[0]);
             } else {
-                selectedPhoto.src = "no-photo.jpg"; // Display "No photo" image
+                selectedPhoto.src = "assets/img/1.jpg"; // Display "No photo" image
             }
         }
     </script>
