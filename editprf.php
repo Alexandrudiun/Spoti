@@ -39,14 +39,17 @@ else {
     
     <script>
         function displaySelectedPhoto(input) {
+            var selectedPhoto = document.getElementById('selected-photo');
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
 
                 reader.onload = function(e) {
-                    document.getElementById('selected-photo').src = e.target.result;
+                    selectedPhoto.src = e.target.result;
                 };
 
                 reader.readAsDataURL(input.files[0]);
+            } else {
+                selectedPhoto.src = "no-photo.jpg"; // Display "No photo" image
             }
         }
     </script>
@@ -72,7 +75,7 @@ else {
             </label>
         </form>
         <div style="display: flex; justify-content:center;">
-            <img id="selected-photo" src="" alt="Selected Photo" style="width: 120px; height: 120px; border-radius: 12px;">
+            <img id="selected-photo" src="" alt="Selected Photo" style="width: 120px; height: 120px; border-radius: 12px; margin-left: 150px;">
         </div>
     </div>
 </body>
