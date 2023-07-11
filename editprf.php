@@ -71,7 +71,7 @@ else {
                 Update profile photo
             </label>
         </form>
-        <div>
+        <div style="display: flex; justify-content:center;">
             <img id="selected-photo" src="" alt="Selected Photo" style="width: 120px; height: 120px; border-radius: 12px;">
         </div>
     </div>
