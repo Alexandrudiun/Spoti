@@ -37,25 +37,43 @@ else {
     <link rel="icon" href="/assets/img/1.jpg">
     <link rel="shortcut icon" href="assets/img/1.jpg" type="image/x-icon">
     
+    <script>
+        function displaySelectedPhoto(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    document.getElementById('selected-photo').src = e.target.result;
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
 </head>
 <body>
-    <style>.LoginBox input[type="file"] {
+    <style>
+     .LoginBox input[type="file"] {
             display: none;
-        }</style>
+        }
+    </style>
     <div class="LoginBox">
         <h1>Login</h1>
         <form method="POST" action="" enctype="multipart/form-data">
             <p>Name:</p>
             <input type="text" name="name" value="<?php echo $_SESSION['name'];?>">
 
-        <label class="buton">
-        Click here to change your profile photo          
-        <input type="file" accept="image/*" name="image" id="image">
-    </label>
-    <label class="buton" type="submit" name="submit" value="Update" class="buton">
-            Update profile photo
-    </label class="buton">
+            <label class="buton" style="text-align: center;">
+                Click here to change your profile photo          
+                <input type="file" accept="image/*" name="image" id="image" onchange="displaySelectedPhoto(this)">
+            </label>
+            <label class="buton" type="submit" name="submit" value="Update" class="buton">
+                Update profile photo
+            </label>
         </form>
+        <div>
+            <img id="selected-photo" src="" alt="Selected Photo">
+        </div>
     </div>
 </body>
 </html>
