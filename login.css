@@ -50,6 +50,12 @@
             color: #15f4f5;
         }
         
+        .LoginBox input[type="file"] {
+            display: none;
+        }
+        .change-profile{
+            text-align: center;
+        }
         .buton {
             display: flex;
             justify-content: center;

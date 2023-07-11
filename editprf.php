@@ -39,17 +39,12 @@ else {
     
 </head>
 <body>
-<style>
-        .LoginBox input[type="file"] {
-            display: none;
-        }
-    </style>
     <div class="LoginBox">
         <h1>Login</h1>
         <form method="POST" action="" enctype="multipart/form-data">
             <p>Name:</p>
             <input type="text" name="name" value="<?php echo $_SESSION['name'];?>">
-            <label class="change-profile">Schimbă poza de profil
+            <label class="change-profile">Click here to change your profile photo
           <input type="file" accept="image/*" name="image" id="image"></label>
           
             <input type="submit" name="submit" value="Update" class="buton">
