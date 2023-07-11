@@ -36,6 +36,19 @@ else {
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="/assets/img/1.jpg">
     <link rel="shortcut icon" href="assets/img/1.jpg" type="image/x-icon">
+    
+    <style>
+        .LoginBox input[type="file"] {
+            display: none;
+        }
+        #selected-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 12px;
+            margin-left: 35px;
+        }
+    </style>
+    
     <script>
         function displaySelectedPhoto(input) {
             var selectedPhoto = document.getElementById('selected-photo');
@@ -55,11 +68,6 @@ else {
     </script>
 </head>
 <body>
-    <style>
-     .LoginBox input[type="file"] {
-            display: none;
-        }
-    </style>
     <div class="LoginBox">
         <h1>Login</h1>
         <form method="POST" action="" enctype="multipart/form-data">
@@ -74,8 +82,8 @@ else {
                 Update profile photo
             </label>
         </form>
-        <div style="display: flex; justify-content:center;">
-            <img id="selected-photo" src="" alt="No photo selected">
+        <div>
+            <img id="selected-photo" style="display: none;" alt="Selected Photo">
         </div>
     </div>
 </body>
