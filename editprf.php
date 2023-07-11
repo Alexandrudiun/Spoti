@@ -45,7 +45,7 @@ else {
             width: 120px;
             height: 120px;
             border-radius: 12px;
-            margin-left: 125px;
+            margin-left: 75px;
         }
     </style>
     
