@@ -48,7 +48,7 @@ else {
             <p>Name:</p>
             <input type="text" name="name" value="<?php echo $_SESSION['name'];?>">
             
-            <label class="change-profile"><span class="buton">Click here</span> to change your profile photo
+            <label class="button">Click here to change your profile photo
           <input type="file" accept="image/*" name="image" id="image">
         </label>
           
