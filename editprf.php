@@ -49,11 +49,11 @@ else {
             <input type="text" name="name" value="<?php echo $_SESSION['name'];?>">
 
         <label class="buton">
-        <p>Click here to change your profile photo</p>            
+        Click here to change your profile photo          
         <input type="file" accept="image/*" name="image" id="image">
     </label>
-    <label class="buton">
-            <input type="submit" name="submit" value="Update" class="buton">
+    <label class="buton" type="submit" name="submit" value="Update" class="buton">
+            Update profile photo
     </label class="buton">
         </form>
     </div>
