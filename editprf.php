@@ -85,7 +85,7 @@ else {
                 <input type="file" accept="image/*" name="image" id="image" onchange="displaySelectedPhoto(this)">
             </label>
             <br>
-            <div style="text-align: center; display:flex; justify-content:center; margin-left: 2px;">
+            <div style="text-align: center; display:flex; justify-content:center; margin-left: 2px; margin-right: 2px;">
                 
             <button class="buton" type="submit" name="submit" value="Update" class="buton">
                 Update profile photo
