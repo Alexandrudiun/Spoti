@@ -12,7 +12,7 @@ session_start();
     $phone = $usr['phone'];
     $availability = $usr['availability'];
     $date =$usr['date'];
-    $image = $usr['image'];
+    $image = $usr['photo'];
 
     $presentDate = date('Y-m-d'); // Get the present date
     $daysBetween = floor((strtotime($presentDate) - strtotime($date)) / (60 * 60 * 24));
