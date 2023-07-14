@@ -67,7 +67,7 @@ session_start();
         if (strlen($name) <= 5) {
             echo $name . "!";
         } else {
-            echo "<span style='font-size: 30px;'>" .$name . "!</name>";
+            echo "<span style='font-size: 30px; margin: 0 px;'>" .$name . "!</name>";
         }
     }
     ?></h1>
