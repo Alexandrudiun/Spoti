@@ -80,7 +80,7 @@ else {
             <p>Name:</p>
             <input type="text" name="name" value="<?php echo $_SESSION['name'];?>">
             <br>
-            <div style="text-align: center; display:flex; justify-content:center;">
+            <div style="text-align: center; display:flex; justify-content:center; flex-direction:column;">
             <label class="buton" style="text-align: center;">
                 Click here to change your profile photo          
                 <input type="file" accept="image/*" name="image" id="image" onchange="displaySelectedPhoto(this)">
