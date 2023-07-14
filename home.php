@@ -61,6 +61,7 @@ session_start();
                 </style>
                 <img src="data:image/jpeg;base64,<?=base64_encode($image)?>" alt="profile picture of <?=$name?>" class="profile-img">
             </div>
+            <div style="display:flex; flex-direction:column;">
             <h1 style="text-align: left; margin-top: 10px;">Hello,</h1>
     <?php
     if ($name) {
