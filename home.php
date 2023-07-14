@@ -12,6 +12,7 @@ session_start();
     $phone = $usr['phone'];
     $availability = $usr['availability'];
     $date =$usr['date'];
+    $image = $usr['photo']; 
 
     $presentDate = date('Y-m-d'); // Get the present date
     $daysBetween = floor((strtotime($presentDate) - strtotime($date)) / (60 * 60 * 24));
@@ -50,7 +51,17 @@ session_start();
     <div class="LoginBox">
         <div class="NameAndProfilePhotoBox">
             <div style="width: 120px; position: relative; justify-content: center; height: 120px;">
-            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80" style="width: 120px; height: 120px; border-radius: 12px;" alt="Profile Picture">
+            <div class="image">
+                <?php if($image==NULL): ?>
+                <img src='/img/user.png' class='profile-img'>
+                <?php else: ?>
+                <img src="data:image/jpeg;base64,<?=base64_encode($image)?>" alt="profile picture of <?=$name?>" class="profile-img">
+                <?php endif; ?>
+                <div class="plus-icon">
+                <ion-icon name="add-circle-outline"></ion-icon>
+                </div>
+                </a>
+            </div>
         </div>
         <h1 style="text-align: left; margin-top: 10px;">Hello<?php if($name)echo", " . $name;?>!</h1>
         </div>
