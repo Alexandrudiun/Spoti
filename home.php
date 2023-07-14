@@ -58,7 +58,7 @@ session_start();
                         height: 120px;
                         border-radius: 12px;
                         margin-left: 75px;
-                    }
+                    }</style>
                 <img src="data:image/jpeg;base64,<?=base64_encode($image)?>" alt="profile picture of <?=$name?>" class="profile-img">
               
                 
