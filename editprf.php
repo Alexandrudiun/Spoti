@@ -89,7 +89,8 @@ else {
             <br>
             <label class="buton" style="text-align: center; margin-left:9px;">
                 <p>Click here to upload a photo</p>          
-                <input type="file" accept="image/*" name="image" id="image" onchange="displaySelectedPhoto(this)">
+                onchange="displaySelectedPhoto(this)"
+                <input type="file" accept="image/*" name="image" id="image" >
             </label>
             <br>
             
