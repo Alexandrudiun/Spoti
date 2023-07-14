@@ -80,7 +80,7 @@ else {
     <div class="LoginBox">
         <h1>Login</h1>
         <form method="POST" action="" enctype="multipart/form-data">
-            <p>Name:</p>
+            <p style="margin-left: 7px;">New Name:</p>
             <input type="text" name="name" value="<?php echo $_SESSION['name'];?>">
             <br>
             <label class="buton" style="text-align: center; margin-left:9px;">
