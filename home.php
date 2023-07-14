@@ -73,7 +73,7 @@ session_start();
         }
     }
     ?>
-
+            </div>
         </div> 
             <div class="valabilitateBox">
                 <h2>Availability</h2>
