@@ -87,7 +87,7 @@ else {
             <br>
             
         <div>
-            <img id="selected-photo" style="display: none; padding-bottom:10px;" alt="Selected Photo">
+            <img id="selected-photo" style="display: none; margin-bottom:10px;" alt="Selected Photo">
         </div>
         
             <div style="text-align: center; display:flex; justify-content:center; margin-left: 1px;">
