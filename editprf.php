@@ -85,10 +85,11 @@ else {
                 <input type="file" accept="image/*" name="image" id="image" onchange="displaySelectedPhoto(this)">
             </label>
             <br>
-            <br>
+            
         <div>
             <img id="selected-photo" style="display: none;" alt="Selected Photo">
         </div>
+        <br>
             <div style="text-align: center; display:flex; justify-content:center; margin-left: 1px;">
                 
             <button class="buton" type="submit" name="submit" value="Update" class="buton">
