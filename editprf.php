@@ -81,7 +81,7 @@ else {
             <input type="text" name="name" value="<?php echo $_SESSION['name'];?>">
             <br>
             <label class="buton" style="text-align: center; margin-left:9px;">
-                Click here to upload a photo          
+                <p>Click here to upload a photo</p>          
                 <input type="file" accept="image/*" name="image" id="image" onchange="displaySelectedPhoto(this)">
             </label>
             <br>
@@ -93,7 +93,7 @@ else {
             <div style="text-align: center; display:flex; justify-content:center; margin-left: 1px;">
                 
             <button class="buton" type="submit" name="submit" value="Update" class="buton">
-                Update profile photo
+                <p>Update profile photo</p>
             </button>
 
             </div>
