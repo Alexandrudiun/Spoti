@@ -63,8 +63,8 @@ session_start();
             </div>
         <h1 style="text-align: left; margin-top: 10px;">Hello
         <?php if($name){
-            if(strlen($name)<=5) echo"," . $name . "!";
-            else echo "," . substr($name, 0, 5) . "...";
+            if(strlen($name)<=5) echo", " . $name . "!";
+            else echo ", " . substr($name, 0, 5) . "...";
             
         }?></h1>
         </div> 
