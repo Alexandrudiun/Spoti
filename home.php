@@ -13,7 +13,7 @@ session_start();
     $availability = $usr['availability'];
     $date =$usr['date'];
     $image = $usr['photo'];
-
+    $_SESSION['image'] = $image;
     $presentDate = date('Y-m-d'); // Get the present date
     $daysBetween = floor((strtotime($presentDate) - strtotime($date)) / (60 * 60 * 24));
     $availability = $availability - $daysBetween;

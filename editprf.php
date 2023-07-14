@@ -19,9 +19,10 @@ if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
         // if($image_size == false) {
         //     die("Invalid image.");
         // }
-
-        $query = "UPDATE users SET photo = '$image' WHERE email = '$email'";
-        $update_user_query = mysqli_query($conn, $query);
+        if($_SESSION['image']!=$image) {
+            $query = "UPDATE users SET photo = '$image' WHERE email = '$email'";
+            $update_user_query = mysqli_query($conn, $query);
+        }
         if(!$update_user_query) {
             die("Query Failed" . mysqli_error($conn));
         }
