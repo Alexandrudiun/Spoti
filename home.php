@@ -51,16 +51,13 @@ session_start();
     <div class="LoginBox">
         <div class="NameAndProfilePhotoBox">
             <div style="width: 120px; position: relative; justify-content: center; height: 120px;">
-            <div style="max-width: 100px;">
+            
                 <?php if($image==NULL): ?>
                 <img src='/img/user.png' class='profile-img'>
                 <?php else: ?>
-                <img src="data:image/jpeg;base64,<?=base64_encode($image)?>" alt="profile picture of <?=$name?>" class="profile-img">
+                <img src="data:image/jpeg;base64,<?=base64_encode($image)?>" alt="profile picture of <?=$name?>" style="width: 100px; height:100px;">
                 <?php endif; ?>
-                <div class="plus-icon">
-                <ion-icon name="add-circle-outline"></ion-icon>
-                </div>
-                </a>
+        
             </div>
         </div>
         <h1 style="text-align: left; margin-top: 10px;">Hello<?php if($name)echo", " . $name;?>!</h1>
