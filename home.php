@@ -51,7 +51,7 @@ session_start();
     <div class="LoginBox">
         <div class="NameAndProfilePhotoBox">
             <div style="width: 120px; position: relative; justify-content: center; height: 120px;">
-            <div class="image">
+            <div style="max-width: 100px;">
                 <?php if($image==NULL): ?>
                 <img src='/img/user.png' class='profile-img'>
                 <?php else: ?>
