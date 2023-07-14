@@ -52,7 +52,13 @@ session_start();
         <div class="NameAndProfilePhotoBox">
             <div style="width: 120px; position: relative; justify-content: center; height: 120px;">
             
-        
+                <style>
+                    .profile-img{
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 12px;
+                        margin-left: 75px;
+                    }
                 <img src="data:image/jpeg;base64,<?=base64_encode($image)?>" alt="profile picture of <?=$name?>" class="profile-img">
               
                 
