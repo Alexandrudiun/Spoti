@@ -66,8 +66,7 @@ session_start();
             if(strlen($name)<=5) echo", " . $name . "!";
             else echo ", " . substr($name, 0, 5) . "...";
             
-        }?>
-            </h1>
+        }?></h1>
         </div> 
             <div class="valabilitateBox">
                 <h2>Availability</h2>
