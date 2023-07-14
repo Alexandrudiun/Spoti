@@ -78,9 +78,9 @@ else {
                 Click here to change your profile photo          
                 <input type="file" accept="image/*" name="image" id="image" onchange="displaySelectedPhoto(this)">
             </label>
-            <label class="buton" type="submit" name="submit" value="Update" class="buton">
+            <button class="buton" type="submit" name="submit" value="Update" class="buton">
                 Update profile photo
-            </label>
+    </button>
         </form>
         <div>
             <img id="selected-photo" style="display: none;" alt="Selected Photo">

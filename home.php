@@ -57,21 +57,12 @@ session_start();
                         width: 120px;
                         height: 120px;
                         border-radius: 12px;
-                     
                     }
                 </style>
-
                 <img src="data:image/jpeg;base64,<?=base64_encode($image)?>" alt="profile picture of <?=$name?>" class="profile-img">
-              
-                
-           
-            <!-- <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80" style="width: 120px; height: 120px; border-radius: 12px;" alt="Profile Picture">
-        </div> -->
             </div>
         <h1 style="text-align: left; margin-top: 10px;">Hello<?php if($name)echo", " . $name;?>!</h1>
-        </div>
-       
-    
+        </div> 
             <div class="valabilitateBox">
                 <h2>Availability</h2>
                 <p>Your subscription is available for <span style="color: red;"><?php echo $availability;?></span> days.</p>
