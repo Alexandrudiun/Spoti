@@ -5,7 +5,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
     $email = $_SESSION['email'];
     $password = $_SESSION['password'];
     if(isset($_POST['submit'])) {
-        if(strlen($_POST['name']) >= 16) {
+        if(strlen($_POST['name']) > 16) {
             
             echo "Name is too long.";
         }
