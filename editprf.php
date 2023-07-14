@@ -6,8 +6,10 @@ if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
     $password = $_SESSION['password'];
     if(isset($_POST['submit'])) {
         if(strlen($_POST['name']) >= 15) {
-            die("Name must be less than 15 characters");
+            
+            echo "Name is too long.";
         }
+        else{
         $name = $_POST['name'];
         $query = "UPDATE users SET name = '$name' WHERE email = '$email'";
         $update_user_query = mysqli_query($conn, $query);
@@ -25,6 +27,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
         }
 
         header("Location: home.php");
+        }
     }
 }
 else {
