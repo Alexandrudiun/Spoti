@@ -1,7 +1,6 @@
 <?php  
 include "conn.php";
 session_start(); // Start the session
-echo $_SESSION['image'];
 if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
     $email = $_SESSION['email'];
     $password = $_SESSION['password'];
