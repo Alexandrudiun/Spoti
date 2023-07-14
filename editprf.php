@@ -89,7 +89,7 @@ else {
         <div>
             <img id="selected-photo" style="display: none;" alt="Selected Photo">
         </div>
-        <br>
+        
             <div style="text-align: center; display:flex; justify-content:center; margin-left: 1px;">
                 
             <button class="buton" type="submit" name="submit" value="Update" class="buton">
