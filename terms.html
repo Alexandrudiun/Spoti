@@ -15,10 +15,11 @@
             height: 120vh;
             background: #000000;
             font-family: Arial, sans-serif;
+            overflow: hidden; /* Added overflow property */
         }
         
         .Container { 
-            margin-top: -125px;
+            margin-top: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -34,8 +35,8 @@
             border-radius: 27px;
             animation: glowing-border 2s ease-in-out infinite;
             text-align: left;
-            overflow-y: auto; /* Added overflow-y property */
-            max-height: 80vh; /* Added max-height property */
+            overflow-y: auto;
+            max-height: 80vh;
         }
         
         .PageContent h1 {
