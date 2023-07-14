@@ -61,7 +61,7 @@ session_start();
                 </style>
                 <img src="data:image/jpeg;base64,<?=base64_encode($image)?>" alt="profile picture of <?=$name?>" class="profile-img">
             </div>
-            <h1 style="text-align: left; margin-top: 10px;">Hello,
+            <h1 style="text-align: left; margin-top: 10px;">Hello,</h1>
     <?php
     if ($name) {
         if (strlen($name) <= 5) {
@@ -71,7 +71,7 @@ session_start();
         
         }
     }
-    ?></h1>
+    ?>
 
         </div> 
             <div class="valabilitateBox">
