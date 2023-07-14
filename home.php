@@ -64,7 +64,7 @@ session_start();
             <h1 style="text-align: left; margin-top: 10px;">Hello,
     <?php
     if ($name) {
-        if (strlen($name) <= 5) {
+        if (strlen($name) <= 6) {
             echo $name . "!";
         } else {
             echo substr($name, 0, 5) . "...";
