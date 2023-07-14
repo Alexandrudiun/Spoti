@@ -94,7 +94,8 @@ else {
                 
             <button class="buton" type="submit" name="submit" value="Update" class="buton">
                 Update profile photo
-    </button>
+            </button>
+
             </div>
         </form>
     </div>
