@@ -84,13 +84,15 @@ session_start();
        
         
             <div class="buyBox">
-                <div style="display: flex; gap: 25px; align-items:center; ">
-                <h2>Buy</h2> <img src="assets/img/buy.svg" alt="buy" style="width: 30px; height: 30px;">
+            <div style="display: flex; gap: 25px; align-items: center;">
+                <h2>Buy</h2>
+                <div style="background-color: white; border-radius: 50px; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center;">
+                <img src="assets/img/buy.svg" alt="buy" style="width: 30px; height: 30px;">
                 </div>
-                <p>Buy more availability</p>
-                
-               
             </div>
+            <p>Buy more availability</p>
+            </div>
+
             <div style="display: flex; justify-content: space-between; align-items:center; gap:10px; ">
 
             <a class="edit" href="contact.html"> <h2 style="font-size: 20px; border-radius:12px; text-align: center; border: 2px solid black; padding:5px;">  Contact  </h2></a>
