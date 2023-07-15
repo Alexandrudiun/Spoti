@@ -84,11 +84,11 @@ session_start();
        
         
             <div class="buyBox">
-                <h2>Buy</h2>
+                <h2>Buy</h2> <img src="assets/img/buy.svg" alt="buy" style="width: 30px; height: 30px;">
+           
                 <p>Buy more availability</p>
                 
-                <img src="assets/img/buy.svg" alt="buy" style="width: 30px; height: 30px;">
-           
+               
             </div>
             <div style="display: flex; justify-content: space-between; align-items:center; gap:10px; ">
 
