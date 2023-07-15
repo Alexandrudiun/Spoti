@@ -86,8 +86,8 @@ session_start();
             <div class="buyBox">
             <div style="display: flex; gap: 25px; align-items: center;">
                 <h2>Buy</h2>
-                <div style="background-color: white; border-radius: 50px; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center;">
-                <img src="assets/img/buy.svg" alt="buy" style="width: 30px; height: 30px;">
+                <div style="background-color: white; border-radius: 50px; border:1px solid black; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center;">
+                <img src="assets/img/buy.svg" alt="buy" style="width: 47px; height: 47px;">
                 </div>
             </div>
             <p>Buy more availability</p>
