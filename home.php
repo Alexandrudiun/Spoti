@@ -84,7 +84,7 @@ session_start();
        
         
             <div class="buyBox">
-                <div style="display: flex; gap: 100px; align-items:center; ">
+                <div style="display: flex; gap: 25px; align-items:center; ">
                 <h2>Buy</h2> <img src="assets/img/buy.svg" alt="buy" style="width: 30px; height: 30px;">
                 </div>
                 <p>Buy more availability</p>
