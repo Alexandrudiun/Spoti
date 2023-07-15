@@ -30,10 +30,6 @@
         }
         
         .LoginBox p {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            flex-direction: row;
             margin: 0;
             color: #a49da1;
             font-size: 24px;
