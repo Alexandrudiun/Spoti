@@ -86,9 +86,13 @@ session_start();
             <div class="buyBox">
             <div style="display: flex; gap: 25px; align-items: center;">
                 <h2>Buy</h2>
+            
+            <a href="buy.php">
                 <div style="background-color: #15f4f5; border-radius: 55px; border:1px solid white; width: 67px; height: 50px; display: flex; justify-content: center; align-items: center;">
                 <img src="assets/img/buy.svg" alt="buy" style="width: 45px; height: 45px;">
                 </div>
+            </a>
+
             </div>
             <p>Buy more availability</p>
             </div>
