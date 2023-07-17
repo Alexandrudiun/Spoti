@@ -93,3 +93,7 @@
                 box-shadow: 0 0 5px #15f4f5;
             }
         }
+        a {
+            color: #15f4f5;
+            text-decoration: none;
+        }
