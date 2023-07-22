@@ -35,7 +35,7 @@ else
     <br>
         <input type="submit" value="submit" name="submit">
     <br>
-        <?php $i=0; for($i=$c;$i!=0;$i--) echo "Mai incearca o data"; ?>
+        <?php if($c==1) echo "Mai incearca o data"; ?>
     </form>
 
 </body>
