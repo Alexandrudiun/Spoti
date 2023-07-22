@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
     $enteredPassword = $_POST['m'];
     
     // Check if the entered password matches the correct password hash
-    if (md5($enteredPassword) === $correctPasswordHash) {
+    if ($enteredPassword === $correctPasswordHash) {
         // Redirect to the success page
         header("Location: https://alexandrudiun.github.io/deeaandreea/");
         exit(); // Ensure that the script stops executing after the redirect
