@@ -11,6 +11,10 @@ if(isset($_POST['submit'])){
 }
 else
 {
+   $c=1;
+}
+
+}
 
 ?>
 
@@ -28,16 +32,10 @@ else
      Parola este insa criptata, asa ca trebuie sa o criptezi <br>
      Foloseste codul ascuns pe ultima pagina a agendei si cripeaza l in algoritm MD5 <a href="https://www.dcode.fr/md5-hash">aici</a> <br>
         <input type="text" name="m" id="m">
-        <br>
-        <br>
+    <br>
         <input type="submit" value="submit" name="submit">
-        <br>
-        <?php
-            echo "Mai incearca o data";
-        }
-        
-        }
-?>        
+    <br>
+        <?php if($c==1) echo "Mai incearca o data"; ?>
     </form>
 
 </body>
