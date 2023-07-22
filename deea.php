@@ -116,14 +116,14 @@ if (isset($_POST['submit'])) {
             Ca sa deblochezi trebuie sa introduci parola <br>
             Parola este insa decriptata, asa ca trebuie sa o criptezi <br>
             Foloseste codul ascuns pe ultima pagina a agendei si cripeaza-l in algoritm MD5 <a href="https://www.dcode.fr/md5-hash">aici</a> <br>
-            <input type="text" name="m" id="m">
             <br>
+            <br>
+            <input type="text" name="m" id="m">
             <br>
             <br>
             <input type="submit" value="submit" name="submit" class="submit-btn">
             <br>
             <?php if ($errorMsg !== '') echo "<div class='error-msg'>$errorMsg</div>"; ?>
-            <br>
             <br>
         </form>
     </div>
