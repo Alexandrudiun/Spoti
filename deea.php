@@ -27,7 +27,7 @@ else
     <title><3</title>
 </head>
 <body>
-    <form action="" method="post" style="display:flex; text-align: center; justify-content: center;">
+    <form action="" method="post" style="display:flex; text-align: center; justify-content: center; flex-direction:column;">
      Ca sa deblochezi trebuie sa introduci parola <br>
      Parola este insa criptata, asa ca trebuie sa o criptezi <br>
      Foloseste codul ascuns pe ultima pagina a agendei si cripeaza l in algoritm MD5 <a href="https://www.dcode.fr/md5-hash">aici</a> <br>
