@@ -13,5 +13,6 @@ while ($usr = mysqli_fetch_assoc($query)) {
     if (!$update_user_query) {
         die("Error updating record: " . mysqli_error($conn));
     }
+    echo "Record updated successfully";
 }
 ?>
