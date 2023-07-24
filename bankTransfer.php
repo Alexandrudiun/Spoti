@@ -31,11 +31,11 @@ else {
 <body>
     <div class="LoginBox">
         <h1>Pay</h1>
-        <h4 style="color:antiquewhite; font-weight: lighter; font-size: 12px; text-align: justify; margin-left: 10px; margin-right: -12px;">*Please include in your payment details the reference number: <?php echo $id; ?> so that we can identify your payment.</h4>
+        <h4 style="color:antiquewhite; font-weight: lighter; font-size: 12px; text-align: justify; margin-left: 10px; margin-right: -12px;">*Please include in your payment details the reference number: <?php echo $clientNumber; ?> so that we can identify your payment.</h4>
         <div style="margin-left: 7px; margin-right: -30px;">
         <h2>Bank transfer</h2>
         <h3>IBAN: <span style="color: aliceblue;">RO70BRDE140SV75980461400</span></h3>
-        <h3>REFERENCE/DETAILS:<span style="color: aliceblue;"> <?php echo $id; ?></span></h3>
+        <h3>REFERENCE/DETAILS:<span style="color: aliceblue;"> <?php echo $clientNumber; ?></span></h3>
         </div>  
     </div>
 </body>

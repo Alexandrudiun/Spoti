@@ -31,12 +31,12 @@ else {
 <body>
     <div class="LoginBox">
         <h1>Pay</h1>
-        <h4 style="color:antiquewhite; font-weight: lighter; font-size: 12px; text-align: justify; margin-left: 10px; margin-right: -12px;">*Please include in your payment details the reference number: <?php echo $id; ?> so that we can identify your payment.</h4>
+        <h4 style="color:antiquewhite; font-weight: lighter; font-size: 12px; text-align: justify; margin-left: 10px; margin-right: -12px;">*Please include in your payment details the reference number: <?php echo $clientNumber; ?> so that we can identify your payment.</h4>
         <div style="margin-left: 7px; margin-right: -30px;">
             <h2>Paypal</h2>
             <h3 style="margin-top: -20px;">Paypal account: <span style="color: aliceblue;">
             <h3 style="margin-top: 10px;">@Spoti10</h3>    </span>
-            <h3 style="margin-top: -10px;">Payment details: <span style="color: aliceblue;"><?php echo $id; ?></span></h3>
+            <h3 style="margin-top: -10px;">Payment details: <span style="color: aliceblue;"><?php echo $clientNumber; ?></span></h3>
              </div>  
     </div>
 </body>
