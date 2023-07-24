@@ -7,7 +7,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
     if(isset($_POST['submit'])) {
         if(strlen($_POST['name']) > 16) {
             
-            echo "Name is too long.";
+            $toolong=1;
         }
         else{
         $name = $_POST['name'];
@@ -104,7 +104,9 @@ else {
             <button class="buton" type="submit" name="submit" value="Update" class="buton">
                 <p>Update profile photo</p>
             </button>
-
+            <p style="color: red; margin-left: 10px;">
+            <?php if(isset($toolong)) { 
+               echo'Name too long!';} ?></p>
             </div>
         </form>
     </div>
