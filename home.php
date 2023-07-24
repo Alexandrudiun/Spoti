@@ -85,7 +85,7 @@ session_start();
             <a href="buy.php">
                 <div style="background-color: #15f4f5; border-radius: 55px; border:1px solid white; width: 67px; height: 50px; display: flex; justify-content: center; align-items: center;">
                 <div style="width:45px; height: 45px;"><svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-     width="800px" height="800px" viewBox="0 0 979.248 979.248"
+     width="45px" height="45px" viewBox="0 0 979.248 979.248"
      xml:space="preserve">
     <g>
     
