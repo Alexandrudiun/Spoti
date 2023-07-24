@@ -10,15 +10,10 @@ session_start();
     $name = $usr['name'];
     $_SESSION['name'] = $name;
     $phone = $usr['phone'];
-    $availability = $usr['availability'];
     $date =$usr['date'];
     $image = $usr['photo'];
     $_SESSION['image'] = $image;
-    $presentDate = date('Y-m-d'); // Get the present date
-    $daysBetween = floor((strtotime($presentDate) - strtotime($date)) / (60 * 60 * 24));
-    $availability = $availability - $daysBetween;
-    $query = "UPDATE users SET availability = '$availability' WHERE email = '$email'";
-    $update_user_query = mysqli_query($conn, $query);
+    $availability = $usr['availability'];
 
 } else {
     header("Location: index.php");
