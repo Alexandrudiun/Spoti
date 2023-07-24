@@ -18,7 +18,8 @@
             padding: 30px;
             padding-right: 49px;
             border-radius: 27px;
-            animation: glowing-border 2s ease-in-out infinite;
+            box-shadow: 0 0 5px #15f4f5;
+            
         }
         
         .LoginBox h1 {
@@ -80,13 +81,6 @@
         
         h2 {
             font-size: 33px;
-        }
-        
-        @keyframes glowing-border {
-           
-            100% {
-                box-shadow: 0 0 5px #15f4f5;
-            }
         }
         a {
             color: #15f4f5;
