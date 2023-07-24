@@ -1,6 +1,7 @@
 <?php
 include "conn.php";
 session_start(); // Start the session
+$id = $_GET['id'];
 if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
     $email = $_SESSION['email']; 
     $email_search = "select * from users where email='$email'";
@@ -30,7 +31,7 @@ else {
 </head>
 <body>
     <div class="LoginBox">
-        <h1>Pay</h1>
+        <h1>Pay <?php if($id==0) echo '60 '; else echo '120';?>RON for <?php if($id==0) echo '6 months'; else { echo'12 months';}?></h1>
         <h4 style="color:antiquewhite; font-weight: lighter; font-size: 12px; text-align: justify; margin-left: 10px; margin-right: -12px;">*Please include in your payment details the reference number: <?php echo $clientNumber; ?> so that we can identify your payment.</h4>
         <div style="margin-left: 7px; margin-right: -30px;">
             <h2>Paypal</h2>
