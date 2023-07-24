@@ -32,7 +32,7 @@ else {
 <body>
     <div class="LoginBox">
         <h1>Payment methods</h1>
-        <h3 style="text-align:center;">Pay <?php if($id==0) echo '60 '; else echo '120 ';?>RON for <?php if($id==0) echo '6 months'; else { echo'12 months';}?></h3>
+        <h3 style="text-align:center;margin-left: 19px;">Pay <?php if($id==0) echo '60 '; else echo '120 ';?>RON for <?php if($id==0) echo '6 months'; else { echo'12 months';}?></h3>
         <h4 style="color:antiquewhite; font-weight: lighter; font-size: 12px; text-align: justify; margin-left: 10px; margin-right: -12px;">*Please include in your payment details the reference number: <?php echo $clientNumber; ?> so that we can identify your payment.</h4>
         <div style="margin-left: 7px; margin-right: -30px;">
             <a href="bankTransfer.php?id=<?php echo $id?>"><button class="buton" style="margin-bottom: 15px; margin-top: 10px;"><h3> BANK TRANSFER</h3></button></a>
