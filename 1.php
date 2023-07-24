@@ -1,8 +1,7 @@
 <?php
 include 'conn.php';
-
+$query = mysqli_query($conn, "SELECT * FROM users");
 while ($usr = mysqli_fetch_assoc($query)) {
-    $id = $usr['id'];
     $availability = $usr['availability'];
     $availability = $availability - 1;
 
