@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
             header('location:home.php');
             
         }else{
-            echo "password incorrect";
+            $toolong = 1;
         }
     }else{
         echo "invalid email";
@@ -47,7 +47,9 @@ if(isset($_POST['submit'])){
                     <h2>login</h2>
                     <svg class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M268 112l144 144-144 144M392 256H100"/></svg>
                 </button>
-                  
+                <p style="color: red; margin-left: 10px;">
+            <?php if(isset($toolong)) { 
+               echo'Name too long!';} ?></p>
             </div>
             <div style="display: flex; justify-content: center; flex-direction: column;">
                 <p style="font-size:12px; margin-top:15px; text-align: center;">You don't have an account? </p>
