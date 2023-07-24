@@ -18,10 +18,10 @@ if(isset($_POST['submit'])){
             header('location:home.php');
             
         }else{
-            $toolong = 1;
+            echo "password incorrect";
         }
     }else{
-        echo "invalid email";
+        $toolong = 1;
     }
 }
 ?>
@@ -49,7 +49,7 @@ if(isset($_POST['submit'])){
                 </button>
                 <p style="color: red; margin-left: 10px;">
             <?php if(isset($toolong)) { 
-               echo'Name too long!';} ?></p>
+               echo'Email not found';} ?></p>
             </div>
             <div style="display: flex; justify-content: center; flex-direction: column;">
                 <p style="font-size:12px; margin-top:15px; text-align: center;">You don't have an account? </p>
