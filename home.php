@@ -72,7 +72,7 @@ session_start();
         </div> 
             <div class="valabilitateBox">
                 <h2>Availability</h2>
-                <p>Your subscription is available for <span style="color: red;"><?php echo $availability;?></span> days.</p>
+                <p>Your subscription is available for <span style="color: red;"><?php if($availability>0)echo $availability; else echo"0";?></span> days.</p>
 
             </div>
         
