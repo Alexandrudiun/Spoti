@@ -102,7 +102,7 @@ else {
             <div style="text-align: center; display:flex; justify-content:center; margin-left: 1px;">
                 
             <button class="buton" type="submit" name="submit" value="Update" class="buton">
-                <p>Update profile photo</p>
+                <p>Update profile</p>
             </button>
             <p style="color: red; margin-left: 10px;">
             <?php if(isset($toolong)) { 
